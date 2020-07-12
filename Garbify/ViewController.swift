@@ -167,7 +167,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 predi = trashPrediction.classLabel + " trash"
                 plasticPred = plasticPrediction.classLabel
                 plasticPred = "a " + sanitisePlasticInput(str:plasticPred)
-                confidence_str = String(cString) + "%"
+                confidence_str = String(cString)
                 hud.dismiss()
                 self.performSegue(withIdentifier: "DETAIL", sender: nil)
                 
