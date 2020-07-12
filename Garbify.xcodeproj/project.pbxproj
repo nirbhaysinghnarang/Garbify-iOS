@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CB5FA6824BB325B004F9CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */; };
+		1CB5FA6A24BB325B004F9CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */; };
+		1CB5FA6C24BB325B004F9CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6B24BB325B004F9CFD /* ViewController.swift */; };
+		1CB5FA6F24BB325B004F9CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6D24BB325B004F9CFD /* Main.storyboard */; };
+		1CB5FA7124BB3262004F9CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7024BB3262004F9CFD /* Assets.xcassets */; };
+		1CB5FA7424BB3262004F9CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7224BB3262004F9CFD /* LaunchScreen.storyboard */; };
+		1CB5FA7F24BB3D8E004F9CFD /* trashClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */; };
+		1CB5FA8024BB3D8E004F9CFD /* plasticClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */; };
+		1CB5FA8224BB4247004F9CFD /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */; };
+		CD1C84751A2A9761F8C755B3 /* Pods_Garbify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4299E3944F17DB54DB2F5 /* Pods_Garbify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BB811FC35B529193F6066BA /* Pods-Garbify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbify.release.xcconfig"; path = "Target Support Files/Pods-Garbify/Pods-Garbify.release.xcconfig"; sourceTree = "<group>"; };
+		1CB5FA6424BB325B004F9CFD /* GARBIFY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GARBIFY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1CB5FA6B24BB325B004F9CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CB5FA6E24BB325B004F9CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CB5FA7024BB3262004F9CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CB5FA7324BB3262004F9CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CB5FA7524BB3262004F9CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = trashClassifier.mlmodel; sourceTree = "<group>"; };
+		1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = plasticClassifier.mlmodel; sourceTree = "<group>"; };
+		1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
+		4DB4299E3944F17DB54DB2F5 /* Pods_Garbify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garbify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDFAC478FBA01373E47ACAA /* Pods-Garbify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbify.debug.xcconfig"; path = "Target Support Files/Pods-Garbify/Pods-Garbify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CB5FA6124BB325B004F9CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C84751A2A9761F8C755B3 /* Pods_Garbify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB5FA5B24BB325B004F9CFD = {
+			isa = PBXGroup;
+			children = (
+				1CB5FA6624BB325B004F9CFD /* Garbify */,
+				1CB5FA6524BB325B004F9CFD /* Products */,
+				B8D777C3CB9C4A9FA43BF3CE /* Pods */,
+				ABCEE3B00D0D4FB3F91815F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CB5FA6524BB325B004F9CFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CB5FA6424BB325B004F9CFD /* GARBIFY.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CB5FA6624BB325B004F9CFD /* Garbify */ = {
+			isa = PBXGroup;
+			children = (
+				1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */,
+				1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */,
+				1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */,
+				1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */,
+				1CB5FA6B24BB325B004F9CFD /* ViewController.swift */,
+				1CB5FA6D24BB325B004F9CFD /* Main.storyboard */,
+				1CB5FA7024BB3262004F9CFD /* Assets.xcassets */,
+				1CB5FA7224BB3262004F9CFD /* LaunchScreen.storyboard */,
+				1CB5FA7524BB3262004F9CFD /* Info.plist */,
+				1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */,
+			);
+			path = Garbify;
+			sourceTree = "<group>";
+		};
+		ABCEE3B00D0D4FB3F91815F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4299E3944F17DB54DB2F5 /* Pods_Garbify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D777C3CB9C4A9FA43BF3CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFDFAC478FBA01373E47ACAA /* Pods-Garbify.debug.xcconfig */,
+				1BB811FC35B529193F6066BA /* Pods-Garbify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CB5FA6324BB325B004F9CFD /* Garbify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB5FA7824BB3262004F9CFD /* Build configuration list for PBXNativeTarget "Garbify" */;
+			buildPhases = (
+				846B8442DABF8E0A0CDA74A9 /* [CP] Check Pods Manifest.lock */,
+				1CB5FA6024BB325B004F9CFD /* Sources */,
+				1CB5FA6124BB325B004F9CFD /* Frameworks */,
+				1CB5FA6224BB325B004F9CFD /* Resources */,
+				519B35578ABC3711DED13514 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Garbify;
+			productName = Garbify;
+			productReference = 1CB5FA6424BB325B004F9CFD /* GARBIFY.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CB5FA5C24BB325B004F9CFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Nirbhay Singh";
+				TargetAttributes = {
+					1CB5FA6324BB325B004F9CFD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 1CB5FA5F24BB325B004F9CFD /* Build configuration list for PBXProject "Garbify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CB5FA5B24BB325B004F9CFD;
+			productRefGroup = 1CB5FA6524BB325B004F9CFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CB5FA6324BB325B004F9CFD /* Garbify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CB5FA6224BB325B004F9CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB5FA7424BB3262004F9CFD /* LaunchScreen.storyboard in Resources */,
+				1CB5FA7124BB3262004F9CFD /* Assets.xcassets in Resources */,
+				1CB5FA6F24BB325B004F9CFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		519B35578ABC3711DED13514 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Garbify/Pods-Garbify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Garbify/Pods-Garbify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Garbify/Pods-Garbify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846B8442DABF8E0A0CDA74A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Garbify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CB5FA6024BB325B004F9CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB5FA6C24BB325B004F9CFD /* ViewController.swift in Sources */,
+				1CB5FA8024BB3D8E004F9CFD /* plasticClassifier.mlmodel in Sources */,
+				1CB5FA6824BB325B004F9CFD /* AppDelegate.swift in Sources */,
+				1CB5FA7F24BB3D8E004F9CFD /* trashClassifier.mlmodel in Sources */,
+				1CB5FA6A24BB325B004F9CFD /* SceneDelegate.swift in Sources */,
+				1CB5FA8224BB4247004F9CFD /* resultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CB5FA6D24BB325B004F9CFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB5FA6E24BB325B004F9CFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CB5FA7224BB3262004F9CFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB5FA7324BB3262004F9CFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CB5FA7624BB3262004F9CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CB5FA7724BB3262004F9CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CB5FA7924BB3262004F9CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDFAC478FBA01373E47ACAA /* Pods-Garbify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W6324DDDJ;
+				INFOPLIST_FILE = Garbify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NirbhaySingh.Garbify;
+				PRODUCT_NAME = GARBIFY;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1CB5FA7A24BB3262004F9CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB811FC35B529193F6066BA /* Pods-Garbify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W6324DDDJ;
+				INFOPLIST_FILE = Garbify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NirbhaySingh.Garbify;
+				PRODUCT_NAME = GARBIFY;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB5FA5F24BB325B004F9CFD /* Build configuration list for PBXProject "Garbify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB5FA7624BB3262004F9CFD /* Debug */,
+				1CB5FA7724BB3262004F9CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB5FA7824BB3262004F9CFD /* Build configuration list for PBXNativeTarget "Garbify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB5FA7924BB3262004F9CFD /* Debug */,
+				1CB5FA7A24BB3262004F9CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CB5FA5C24BB325B004F9CFD /* Project object */;
+}

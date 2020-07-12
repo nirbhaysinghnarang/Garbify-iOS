@@ -1,0 +1,6 @@
+framework module Pods_Garbify {
+  umbrella header "Pods-Garbify-umbrella.h"
+
+  export *
+  module * { export * }
+}

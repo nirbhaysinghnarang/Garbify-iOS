@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Garbify/Pods-Garbify-frameworks.sh
+${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
