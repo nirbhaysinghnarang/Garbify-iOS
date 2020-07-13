@@ -17,8 +17,14 @@ class resultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if(!plastic){
-            plastic1Lbl.isHidden = true
-            plastic2Lbl.isHidden = true
+            print(predi,finalPred)
+            plastic2Lbl.isHidden = false
+            plastic1Lbl.text =  "This is "
+            if(finalPred=="organic" && predi=="organic trash"){finalPred="compostable"}
+            plastic2Lbl.text = String(finalPred)
+            confidenceLbl.text = confidence_str + "%"
+            predLbl.text = predi
+            return
         }
         if(!predi.hasSuffix(" trash")) {predi+=" trash"}
         plastic2Lbl.text = plasticPred

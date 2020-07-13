@@ -16,6 +16,7 @@ var predi:String!
 var confidence_str:String!
 var plastic:Bool!
 var plasticPred:String!
+var finalPred:String!
 var photo:UIImage!
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCapturePhotoCaptureDelegate{
@@ -58,7 +59,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
              debugPrint("unable to get image from sample buffer")
              return
          }
-         debugPrint("did receive image frame")
      }
          
      private func addVideoOutput() {
@@ -132,8 +132,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             photo = self.img
             let hud = JGProgressHUD.init()
             hud.show(in: self.view)
-            let trashModel = trashClassifier()
+            let trashModel = trashmodel()
             let plasticModel = plasticClassifier()
+            let organicRecyclabeModel = organic_recyclabel()
             guard let trashPrediction = try? trashModel.prediction(image: self.imgBuffer) else{
                 print("FatalErrorOccured")
                 showAlert(msg:"An unexpected error occured. Please try again.")
@@ -148,7 +149,23 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             let cString:String = String(format:"%.1f", confidence!)
             confidence_str = cString
             if (trashPrediction.classLabel != "plastic"){
+                print("running 4th model")
+                guard let organic_recycable_pred = try? organicRecyclabeModel.prediction(image: self.imgBuffer)
+                else {
+                    print("FatalErrorOccured")
+                    showAlert(msg:"An unexpected error occured. Please try again.")
+                    hud.dismiss()
+                    return
+                }
                 plastic = false
+                var confidence = organic_recycable_pred.classLabelProbs[organic_recycable_pred.classLabel]
+                confidence! *= 100
+                confidence! = confidence?.rounded() as! Double
+                let cString:String = String(format:"%.1f", confidence as! CVarArg)
+                predi = trashPrediction.classLabel + " trash"
+                finalPred = organic_recycable_pred.classLabel
+                print(finalPred)
+                confidence_str = String(cString)
                 hud.dismiss()
                 self.performSegue(withIdentifier: "DETAIL", sender: nil)
             }else{

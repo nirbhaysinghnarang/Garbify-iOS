@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1F545E24BCCA95001E919B /* organic_recyclabel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F545C24BCCA95001E919B /* organic_recyclabel.mlmodel */; };
+		1C1F545F24BCCA95001E919B /* trashmodel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F545D24BCCA95001E919B /* trashmodel.mlmodel */; };
 		1CB5FA6824BB325B004F9CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */; };
 		1CB5FA6A24BB325B004F9CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */; };
 		1CB5FA6C24BB325B004F9CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6B24BB325B004F9CFD /* ViewController.swift */; };
 		1CB5FA6F24BB325B004F9CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA6D24BB325B004F9CFD /* Main.storyboard */; };
-		1CB5FA7124BB3262004F9CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7024BB3262004F9CFD /* Assets.xcassets */; };
+		1CB5FA7124BB3262004F9CFD /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7024BB3262004F9CFD /* assets.xcassets */; };
 		1CB5FA7424BB3262004F9CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7224BB3262004F9CFD /* LaunchScreen.storyboard */; };
-		1CB5FA7F24BB3D8E004F9CFD /* trashClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */; };
 		1CB5FA8024BB3D8E004F9CFD /* plasticClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */; };
 		1CB5FA8224BB4247004F9CFD /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */; };
 		CD1C84751A2A9761F8C755B3 /* Pods_Garbify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4299E3944F17DB54DB2F5 /* Pods_Garbify.framework */; };
@@ -21,15 +22,16 @@
 
 /* Begin PBXFileReference section */
 		1BB811FC35B529193F6066BA /* Pods-Garbify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbify.release.xcconfig"; path = "Target Support Files/Pods-Garbify/Pods-Garbify.release.xcconfig"; sourceTree = "<group>"; };
+		1C1F545C24BCCA95001E919B /* organic_recyclabel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = organic_recyclabel.mlmodel; sourceTree = "<group>"; };
+		1C1F545D24BCCA95001E919B /* trashmodel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = trashmodel.mlmodel; sourceTree = "<group>"; };
 		1CB5FA6424BB325B004F9CFD /* GARBIFY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GARBIFY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1CB5FA6B24BB325B004F9CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CB5FA6E24BB325B004F9CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1CB5FA7024BB3262004F9CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CB5FA7024BB3262004F9CFD /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		1CB5FA7324BB3262004F9CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CB5FA7524BB3262004F9CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = trashClassifier.mlmodel; sourceTree = "<group>"; };
 		1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = plasticClassifier.mlmodel; sourceTree = "<group>"; };
 		1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
 		4DB4299E3944F17DB54DB2F5 /* Pods_Garbify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garbify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,12 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				1CB5FA7E24BB3D8E004F9CFD /* plasticClassifier.mlmodel */,
-				1CB5FA7D24BB3D8E004F9CFD /* trashClassifier.mlmodel */,
+				1C1F545C24BCCA95001E919B /* organic_recyclabel.mlmodel */,
+				1C1F545D24BCCA95001E919B /* trashmodel.mlmodel */,
 				1CB5FA6724BB325B004F9CFD /* AppDelegate.swift */,
 				1CB5FA6924BB325B004F9CFD /* SceneDelegate.swift */,
 				1CB5FA6B24BB325B004F9CFD /* ViewController.swift */,
 				1CB5FA6D24BB325B004F9CFD /* Main.storyboard */,
-				1CB5FA7024BB3262004F9CFD /* Assets.xcassets */,
+				1CB5FA7024BB3262004F9CFD /* assets.xcassets */,
 				1CB5FA7224BB3262004F9CFD /* LaunchScreen.storyboard */,
 				1CB5FA7524BB3262004F9CFD /* Info.plist */,
 				1CB5FA8124BB4247004F9CFD /* resultsViewController.swift */,
@@ -161,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB5FA7424BB3262004F9CFD /* LaunchScreen.storyboard in Resources */,
-				1CB5FA7124BB3262004F9CFD /* Assets.xcassets in Resources */,
+				1CB5FA7124BB3262004F9CFD /* assets.xcassets in Resources */,
 				1CB5FA6F24BB325B004F9CFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +220,9 @@
 			files = (
 				1CB5FA6C24BB325B004F9CFD /* ViewController.swift in Sources */,
 				1CB5FA8024BB3D8E004F9CFD /* plasticClassifier.mlmodel in Sources */,
+				1C1F545E24BCCA95001E919B /* organic_recyclabel.mlmodel in Sources */,
 				1CB5FA6824BB325B004F9CFD /* AppDelegate.swift in Sources */,
-				1CB5FA7F24BB3D8E004F9CFD /* trashClassifier.mlmodel in Sources */,
+				1C1F545F24BCCA95001E919B /* trashmodel.mlmodel in Sources */,
 				1CB5FA6A24BB325B004F9CFD /* SceneDelegate.swift in Sources */,
 				1CB5FA8224BB4247004F9CFD /* resultsViewController.swift in Sources */,
 			);
